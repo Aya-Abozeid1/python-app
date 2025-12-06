@@ -53,6 +53,7 @@ jobs:
 
     - name: Set kubeconfig
       run: |
+        mkdir -p $HOME/.kube
         echo "${{ secrets.KUBECONFIG_DATA }}" > $HOME/.kube/config
 
     - name: Update Kubernetes Deployment
