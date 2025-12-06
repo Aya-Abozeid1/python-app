@@ -1,0 +1,5 @@
+AKS-terraform/
+
+.mypy_cache/
+
+k8s-deployment/

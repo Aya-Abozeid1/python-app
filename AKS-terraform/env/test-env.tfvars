@@ -1,0 +1,10 @@
+
+resource_group_name = "test-env-devops"
+resource_group_location = "West Europe"
+security_group_name = "nsg-test-env"
+virtual_network_name    = "vnet-test-env"
+vnet_subnet_id = "10.0.1.0/24"
+allowed_ssh_source_address_prefix = "156.214.100.133/32"
+acr_name     = "acrtestenv"
+cluster_name = "aks-test-env"
+dns_prefix   = "akstestenv"
