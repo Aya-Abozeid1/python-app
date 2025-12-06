@@ -7,6 +7,7 @@ WORKDIR /app
 
 COPY . /app 
 
+RUN pip install prometheus-client
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 5000
