@@ -59,4 +59,5 @@ jobs:
     - name: Update Kubernetes Deployment
       run: |
         kubectl set image deployment/python-app python-app=acrtestenv.azurecr.io/python-app:latest -n application
+        kubectl rollout restart deployment/python-app -n application
         kubectl rollout status deployment/python-app -n application
